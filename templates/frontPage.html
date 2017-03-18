@@ -82,7 +82,7 @@
                             <div class="container">
                                 <form>
                                     <p><i class="glyphicon glyphicon-phone text-center main-title4" id="phone-icon" style="font-weight: bolder;font-size:80px"></i></p>
-                                    <input type="text" class="main-title5" placeholder="Enter Your Phone Number to get Raise Waste pickup request" id="phone-enter" ng-model="phone_no" required>
+                                    <input type="text" class="main-title5" placeholder="Phone Number Verification" id="phone-enter" ng-model="phone_no" required>
                                     <p>&nbsp</p>
                                     
                                     <button type="button"  class=" main-title6 btn text-center" style="background-color:teal;font-weight:bolder;padding:20px;border-radius: 0px;font-size:15px" ng-click="verify()">Request OTP</button>
@@ -614,7 +614,7 @@
 
         // Output the result in an element with id="demo"
         document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds +
-            "s ";
+            "s  " + " Left " ;
 
         // If the count down is over, write some text 
         if (distance < 0) {
