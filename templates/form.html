@@ -1,0 +1,51 @@
+<h1 style="color:black">E-waste Pick up request</h1>
+<hr style="margin-left:10px;margin-right:80px;margin-top: 15px;margin-bottom: 15px" />
+<form>
+    <div class="form-group">
+        <input type="text" class="form-control" id="phone" ng-model="User.phone_no" placeholder={{phone_no}} value='{{phone_no}}' disabled>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Name" ng-model="User.name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email" ng-model="User.email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Residential Address" ng-model="User.res_address" required>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <select class="form-control" ng-model="User.scrap_amount" required>
+                    <option value='' disabled selected><span style="font-family:'Amaranth' ">Select Approximate scrap amount</span></option>
+                    <option>20kg</option>
+                    <option>25kg</option>
+                    <option>30kg</option>
+                    <option>35kg</option>
+                    <option>40kg</option>
+                    <option>45kg</option>
+                    <option>50kg</option>
+                    <option>55kg</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <select ng-model="User.time" class="form-control" id="time" required>
+                    <option value="" disabled selected><span style="font-family:'Amaranth' ">Select Start Time</span></option>
+                    <option>10:00 AM - 11:00 AM </option>
+                    <option>11:00 AM - 12:00 AM </option>
+                    <option>12:00 AM - 01:00 PM</option>
+                    <option>01:00 PM - 02:00 PM </option>
+                    <option>02:00 PM - 03:00 PM </option>
+                    <option>03:00 PM - 04:00 PM</option>
+                    <option>04:00 PM - 05:00 PM</option>
+                    <option>05:00 PM - 06:00 PM</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success" id="submit" ng-click="signup()">Submit</button>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+</form>

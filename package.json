@@ -1,0 +1,61 @@
+{
+  "name": "fullpage.js",
+  "version": "2.9.2",
+  "description": "Create beautiful fullscreen scrolling websites",
+  "main": "dist/jquery.fullpage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alvarotrigo/fullPage.js.git"
+  },
+  "keywords": [
+    "jquery",
+    "javacript",
+    "scrolling",
+    "single_page",
+    "onepage",
+    "fullpage",
+    "fullpagejs",
+    "one_page",
+    "sliding",
+    "snap",
+    "scroll"
+  ],
+  "files": [
+    "vendors",
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "angular-fullpage.js": "^0.2.6",
+    "angular-ui-router": "^0.4.2",
+    "express": "^4.15.2",
+    "express-mailer": "^0.3.1",
+    "jquery": ">=1.6.0"
+  },
+  "authors": [
+    "Alvaro Trigo https://github.com/alvarotrigo"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarotrigo/fullPage.js/issues"
+  },
+  "homepage": "https://github.com/alvarotrigo/fullPage.js",
+  "namespace": "$.fn.fullpage",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "author": ""
+}

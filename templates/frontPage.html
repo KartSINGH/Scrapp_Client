@@ -1,0 +1,831 @@
+<nav class="navbar navbar-fixed-top" >
+    <div class="container-fluid" style="padding:0px">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>ScrApp</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<!--  <div id="myModal" class="modal fade" role="dialog" > 
+    <div class="modal-dialog"> 
+        
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title" style="color:teal">Step 1/2 : Phone Number Verification</h3>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Phone Number" id="phone-enter" ng-model="phone_no">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" style="background-color:teal;color:white" ng-click="verify()">Send OTP</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>  
+-->
+<div id="fullpage">
+    <div class="section " style="padding:0px">
+        <!-- <div class="container demo-2" style="width:100%">
+                    <div class="content">
+            <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="text-center"><span style="color: #FFEB3B;">ScrApp</span> is at your disposal !</h1>
+            <p>&nbsp</p>
+            <h1 class="text-center" id="demo" style="font-size: 60px;"></h1>
+            <p>&nbsp</p>
+            <h2 class="text-center" style="color: #FFEB3B;"> App Coming Soon !</h2>
+              <p>&nbsp</p>
+            <h3 class="text-center" style="color:white">Step 1/2 : Phone Number Verification</h3>
+            <div class="container">
+                <div class="container">
+                    <div class="container">
+                        <form>
+                            <p><i class="glyphicon glyphicon-phone text-center" id="phone-icon"></i></p>
+                            <input type="number" placeholder="Phone Number" id="phone-enter" ng-model="phone_no" required>
+                            <p>&nbsp</p>
+                            <button type="button" class="btn text-center" style="background-color:white;color:teal;margin-left:43%" ng-click="verify()">Send OTP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                </div>
+
+            
+          
+        </div>
+        </div>-->
+        <!-- Modal -->
+        <div class="container demo-3" style="padding:0px">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="text-center main-title"><span style="color:#FFEB3B;font-weight: bolder">ScrApp</span> is at your disposal !</h1>
+                    <p>&nbsp</p>
+                    <h1 class="text-center main-title1 " id="demo" style="font-size: 60px;font-weight:bolder"></h1>
+                    <p>&nbsp</p>
+                    <h2 class="text-center main-title2" style="color: #FFEB3B;font-weight:bolder"> App Coming Soon !</h2>
+                    
+                    <div class="container">
+                        <div class="container">
+                            <div class="container">
+                                <form>
+                                    <p><i class="glyphicon glyphicon-phone text-center main-title4" id="phone-icon" style="font-weight: bolder;font-size:80px"></i></p>
+                                    <input type="text" class="main-title5" placeholder="Enter Your Phone Number to get Raise Waste pickup request" id="phone-enter" ng-model="phone_no" required>
+                                    <p>&nbsp</p>
+                                    
+                                    <button type="button"  class=" main-title6 btn text-center" style="background-color:teal;font-weight:bolder;padding:20px;border-radius: 0px;font-size:15px" ng-click="verify()">Request OTP</button>
+                                    <p><i class="glyphicon glyphicon-menu-down text-center main-title7 animated bounce"  style="font-size:35px"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section " style="background-image: url('');background-size: cover;">
+        <div class="container" >
+            <h1 class="text-center" style="margin-bottom: 30px">Features of ScrApp </h1>
+            <hr style="color:white ;margin-left:25%;margin-right:25%;margin-bottom: 90px" />
+            <div class="row" style="z-index: 1">
+
+                <div class="col-md-3">
+                    <div class="features">
+                        <div class="listing" style="margin-left:10%;margin-right:10%">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                <div class="no text-center"><h1>1</h1></div>
+                                </div>
+                                <div class="col-xs-9">
+                                <div class="desc text-center"><h1>Feature 1</h1></div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="listing" style="margin-left:10%;margin-right:10%">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                <div class="no text-center"><h1>2</h1></div>
+                                </div>
+                                <div class="col-xs-9">
+                                <div class="desc text-center"><h1>Feature 2</h1></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <div class="listing" style="margin-left:10%;margin-right:10%">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                <div class="no text-center"><h1>3</h1></div>
+                                </div>
+                                <div class="col-xs-9">
+                                <div class="desc text-center"><h1>Feature 3</h1></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                </div>
+                
+                  
+                <div class="col-md-6">
+                  
+                    <div class="fc-mac" id="fc-mac" style="display: block;margin:0 auto"></div>
+               
+                   </div>
+                
+                 
+                <div class="col-md-3">
+                    <div class="features">
+                       <div class="listing" style="margin-left:10%;margin-right:10%">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                <div class="no text-center"><h1>4</h1></div>
+                                </div>
+                                <div class="col-xs-9">
+                                <div class="desc text-center"><h1>Feature 4</h1></div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="listing" style="margin-left:10%;margin-right:10%">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                <div class="no text-center"><h1>5</h1></div>
+                                </div>
+                                <div class="col-xs-9">
+                                <div class="desc text-center"><h1>Feature 5</h1></div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="listing" style="margin-left:10%;margin-right:10%">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                <div class="no text-center"><h1>6</h1></div>
+                                </div>
+                                <div class="col-xs-9">
+                                <div class="desc text-center"><h1>Feature 6</h1></div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-noscroll" style="background-image: url('');background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center" style="transform: scale(0.9)">
+                    <p>&nbsp</p>
+                    <p>&nbsp</p>
+                    <p>&nbsp</p>
+                    <div id="node_section_1">
+                        <h1 style="color:bisque">Stage Title 1</h1>
+                        <p>&nbsp</p>
+                        <hr style="margin-left:25%;margin-right:25%;margin-bottom:50px">
+                        <h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non provident, similique sunt in culpa qui officia deserunt</h2>
+                    </div>
+                    <div id="node_section_2">
+                        <h1 style="color:white">Stage Title 2</h1>
+                        <p>&nbsp</p>
+                        <hr style="margin-left:25%;margin-right:25%;margin-bottom:50px">
+                        <h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non provident, similique sunt in culpa qui officia deserunt</h2>
+                    </div>
+                    <div id="node_section_3">
+                        <h1 style="color:white">Stage Title 3</h1>
+                        <p>&nbsp</p>
+                        <hr style="margin-left:25%;margin-right:25%;margin-bottom:50px">
+                        <h2>Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non provident, similique sunt in culpa qui officia deserunt</h2>
+                    </div>
+                    <div id="node_section_4">
+                        <h1 style="color:bisque">Stage Title 4</h1>
+                        <p>&nbsp</p>
+                        <hr style="margin-left:25%;margin-right:25%;margin-bottom:50px" />
+                        <h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non provident, similique sunt in culpa qui officia deserunt</h2>
+                    </div>
+                    <div id="node_section_5">
+                        <h1 style="color:beige">Process Flow</h1>
+                        <p>&nbsp</p>
+                        <hr style="margin-left:25%;margin-right:25%;margin-bottom:50px;color:darkslategrey" />
+                        <h2 style="color:white">There is no such thing as "AWAY".When we throw anything it must go somewhere</h2>
+                        <p>&nbsp</p>
+                        <p>&nbsp</p>
+                        <p>&nbsp</p>
+                        <p>&nbsp</p>
+                        <h4 style="color:white">Click on node to view details</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center" style="transform:scale(0.7)">
+                    <!--<div id="paths">
+                        <p id="node1" onclick="display1()" style="cursor: pointer" class="path_stage">Node 1</p>
+                        <p id="node2" onclick="display2()" style="cursor: pointer" class="path_stage">Node 2</p>
+                        <p id="node3" onclick="display3()" style="cursor: pointer" class="path_stage">Node 3</p>
+                        <p id="node4" onclick="display4()" style="cursor: pointer" class="path_stage">Node 4</p>
+                    </div> -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve" style="transform:scale(2)">
+                        <image overflow="visible" width="5000" height="5000" xlink:href="svg/background.png" transform="matrix(0.0998 0 0 0.1 0 0)">
+                        </image>
+                        <image overflow="visible" enable-background="new    " width="283" height="283" xlink:href="svg/BF43CB0D.png" transform="matrix(0.2183 0 0 0.2576 222.6104 61.3389)">
+                        </image>
+                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB13.png" transform="matrix(0.0993 0 0 0.1224 328.4072 128.3564)">
+                        </image>
+                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB15.png" transform="matrix(0.097 0 0 0.0922 332.874 296.6934)">
+                        </image>
+                        <image overflow="visible" enable-background="new    " width="1200" height="630" xlink:href="svg/BF43CB17.png" transform="matrix(0.0812 0 0 0.0904 211.2705 373.5078)">
+                        </image>
+                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB14.png" transform="matrix(0.0996 0 0 0.0936 57.4746 296.1836)">
+                        </image>
+                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB1C.png" transform="matrix(0.1404 0 0 0.1621 29.3628 113.9238)">
+                        </image>
+                        </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-noscroll" style="padding-top:20px;background-image: url('');background-size: cover" >
+        <div class="container">
+            <div class="row" style="transform:scale(0.8)">
+                <div class="col-md-12">
+                    <h1 style="color:bisque" class="text-center">When Numbers Speak</h1>
+                    <p>&nbsp</p>
+                    <hr style="margin-left:35%;margin-right:35%;margin-bottom:30px" />
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="row text-center" style="transform: scale(1.4)">
+                                <h1 id="el">0</h1>
+                                <h2 style="color:white;font-family: 'Amaranth' ">Years of Experience</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center" style="transform: scale(1.4)">
+                            <h1 id="el1">0</h1>
+                            <h2 style="color:white;font-family: 'Amaranth'">Clients Served</h2>
+                        </div>
+                        <div class="col-md-4 text-center" style="transform: scale(1.4)">
+                            <h1 id="el2">0</h1>
+                            <h2 style="color:white;font-family: 'Amaranth'">Tons of Scrap Handled</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <h1 style="color:bisque" class="text-center">Our Happy Clients</h1>
+            <p>&nbsp</p>
+            <hr style="margin-left:35%;margin-right:35%;margin-bottom:30px" />
+            <div class="row" style="transform: scale(0.7)">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="owl-carousel owl-theme" style="transform: scale(1)">
+                                <div class="item">
+                                    <img id="t_image" src="https://www.freeagent.com/components/images/buzz/matthew-hall-hallway-studios-de198f2f.jpg" class="col-center">
+                                    <h1 class="col-center">Mathew Hall</h1>
+                                    <p>&nbsp</p>
+                                    <p style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                                        sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt</p>
+                                </div>
+                                <div class="item">
+                                    <img id="t_image" src="https://www.circleof6app.com/wp-content/uploads/2015/12/thomas_cabus1.png" class="col-center">
+                                    <h1 class="col-center">Stage Title 3</h1>
+                                    <p>&nbsp</p>
+                                    <p style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                                        sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt</p>
+                                </div>
+                                <div class="item">
+                                    <img id="t_image" src="https://www.freeagent.com/components/images/buzz/matthew-hall-hallway-studios-de198f2f.jpg">
+                                    <h1>Stage Title 3</h1>
+                                    <p>&nbsp</p>
+                                    <p style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                                        sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt</p>
+                                </div>
+                                <div class="item">
+                                    <img id="t_image" src="https://www.circleof6app.com/wp-content/uploads/2015/12/thomas_cabus1.png">
+                                    <h1>Stage Title 3</h1>
+                                    <p>&nbsp</p>
+                                    <p style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                                        sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height">
+        <footer style="padding-top:0px;margin-top:0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 footerleft ">
+                        <div class="logofooter"> Logo</div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                        <p><i class="fa fa-map-pin"></i> 210, Aggarwal Tower, Rohini sec 9, New Delhi -        110085, INDIA
+                        </p>
+                        <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 878 398</p>
+                        <p><i class="fa fa-envelope"></i> E-mail : info@webenlance.com</p>
+                    </div>
+                    <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                        <h6 class="heading7">GENERAL LINKS</h6>
+                        <ul class="footer-ul">
+                            <li><a href="#"> Career</a></li>
+                            <li><a href="#"> Privacy Policy</a></li>
+                            <li><a href="#"> Terms & Conditions</a></li>
+                            <li><a href="#"> Client Gateway</a></li>
+                            <li><a href="#"> Ranking</a></li>
+                            <li><a href="#"> Case Studies</a></li>
+                            <li><a href="#"> Frequently Ask Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                        <h6 class="heading7">LATEST POST</h6>
+                        <div class="post">
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false"
+                            style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <div class="fb-xfbml-parse-ignore">
+                                <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    <!--footer start from here-->
+    <div class="copyright">
+        <div class="container">
+            <div class="col-md-6">
+                <p>© 2016 - All Rights with Webenlance</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="bottom_ul">
+                    <li><a href="#">webenlance.com</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Faq's</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+
+
+
+        $('#fullpage').fullpage({
+            //Navigation
+            menu: '#myMenu',
+            lockAnchors: true,
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'], //anchor links for direct access from button
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['firstSlide', 'secondSlide'],
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom',
+
+            //Scrolling
+            css3: false,
+            scrollingSpeed: 1200,
+
+
+            fitToSectionDelay: 1000,
+            scrollBar: false,
+            easing: 'easeInSine',
+            easingcss3: 'ease-in-out',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            continuousHorizontal: false,
+            scrollHorizontally: false,
+            interlockedSlides: false,
+            dragAndMove: false,
+            offsetSections: false,
+            resetSliders: false,
+            fadingEffect: true,
+            normalScrollElements: '#element1, .element2',
+            scrollOverflow: true,
+            scrollOverflowReset: true,
+            scrollOverflowOptions: null,
+            touchSensitivity: 15,
+            normalScrollElementTouchThreshold: 5,
+            bigSectionsDestination: null,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: false,
+
+            //Design
+            controlArrows: false,
+            verticalCentered: true,
+            sectionsColor: ['#00796B', '#fec901', '#1E9B96', '#6e993c', '#1E88E5', '#455A64'],
+            paddingTop: '0em',
+            paddingBottom: '0px',
+            fixedElements: '',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            responsiveSlides: true,
+
+            //Custom selectors
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+
+            lazyLoading: true,
+
+            //events
+            onLeave: function (index, nextIndex, direction) {},
+            afterLoad: function (anchorLink, index) {},
+            afterRender: function () {},
+            afterResize: function () {
+
+            },
+            afterResponsive: function (isResponsive) {},
+            afterLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+
+
+                if (index == 4) {
+                    console.log("page 4");
+                    var $el = $("#el1"),
+                        value = 870;
+
+                    // window.event.preventDefault();
+
+                    $({
+                        percentage: 0
+                    }).stop(true).animate({
+                        percentage: value
+                    }, {
+                        duration: 4000,
+                        easing: "easeOutExpo",
+                        step: function () {
+                            // percentage with 1 decimal;
+                            var percentageVal = Math.round(this.percentage) / 1;
+
+                            $el.text(percentageVal);
+                        }
+                    }).promise().done(function () {
+                        // hard set the value after animation is done to be
+                        // sure the value is correct
+                        $el.text(value);
+                    });
+                }
+
+
+                var $el_1 = $("#el"),
+                    value_1 = 4;
+
+                //event.preventDefault();
+
+                $({
+                    percentage_1: 0
+                }).stop(true).animate({
+                    percentage_1: value_1
+                }, {
+                    duration: 4000,
+                    easing: "easeOutExpo",
+                    step: function () {
+                        // percentage with 1 decimal;
+                        var percentageVal_1 = Math.round(this.percentage_1) / 1;
+
+                        $el_1.text(percentageVal_1);
+                    }
+                }).promise().done(function () {
+                    // hard set the value after animation is done to be
+                    // sure the value is correct
+                    $el_1.text(value_1);
+                });
+
+
+
+                var $el_2 = $("#el2"),
+                    value_2 = 430;
+
+                //event.preventDefault();
+
+                $({
+                    percentage_2: 0
+                }).stop(true).animate({
+                    percentage_2: value_2
+                }, {
+                    duration: 4000,
+                    easing: "easeOutExpo",
+                    step: function () {
+                        // percentage with 1 decimal;
+                        var percentageVal_2 = Math.round(this.percentage_2) / 1;
+
+                        $el_2.text(percentageVal_2);
+                    }
+                }).promise().done(function () {
+                    // hard set the value after animation is done to be
+                    // sure the value is correct
+                    $el_2.text(value_2);
+                });
+
+            },
+            onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+
+            }
+        });
+
+
+    });
+</script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 80,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+</script>
+<!-- Latest compiled and minified JavaScript -->
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jun 5, 2017 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds +
+            "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+<script>
+    $("#node_section_2").hide();
+    $("#node_section_3").hide();
+    $("#node_section_4").hide();
+    $("#node_section_1").hide();
+
+    function display1() {
+        console.log("onclick called")
+        $("#node_section_2").hide();
+        $("#node_section_3").hide();
+        $("#node_section_4").hide();
+        $("#node_section_5").hide();
+        $("#node_section_1").fadeIn(1500);
+    }
+
+    function display2() {
+        console.log("onclick called")
+        $("#node_section_1").hide();
+        $("#node_section_3").hide();
+        $("#node_section_4").hide();
+        $("#node_section_5").hide();
+        $("#node_section_2").fadeIn(1500);
+    }
+
+    function display3() {
+        console.log("onclick called")
+        $("#node_section_2").hide();
+        $("#node_section_1").hide();
+        $("#node_section_4").hide();
+        $("#node_section_5").hide();
+        $("#node_section_3").fadeIn(1500);
+    }
+
+    function display4() {
+        console.log("onclick called")
+        $("#node_section_2").hide();
+        $("#node_section_3").hide();
+        $("#node_section_1").hide();
+        $("#node_section_5").hide();
+        $("#node_section_4").fadeIn(1500);
+    }
+</script>
+<script>
+    (function() {
+
+    var width, height, largeHeader, canvas, ctx, triangles, target, animateHeader = true;
+    var colors = ['72,35,68', '43,81,102', '66,152,103', '250,178,67', '224,33,48'];
+
+    // Main
+    initHeader();
+    addListeners();
+    initAnimation();
+
+    function initHeader() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        target = {x: 0, y: height};
+
+        largeHeader = document.getElementById('large-header');
+        largeHeader.style.height = height+'px';
+
+        canvas = document.getElementById('demo-canvas');
+        canvas.width = width;
+        canvas.height = height;
+        ctx = canvas.getContext('2d');
+
+        // create particles
+        triangles = [];
+        for(var x = 0; x < 480; x++) {
+            addTriangle(x*10);
+        }
+    }
+
+    function addTriangle(delay) {
+        setTimeout(function() {
+            var t = new Triangle();
+            triangles.push(t);
+            tweenTriangle(t);
+        }, delay);
+    }
+
+    function initAnimation() {
+        animate();
+    }
+
+    function tweenTriangle(tri) {
+        var t = Math.random()*(2*Math.PI);
+        var x = (200+Math.random()*100)*Math.cos(t) + width*0.5;
+        var y = (200+Math.random()*100)*Math.sin(t) + height*0.5-20;
+        var time = 4+3*Math.random();
+
+        TweenLite.to(tri.pos, time, {x: x,
+            y: y, ease:Circ.easeOut,
+            onComplete: function() {
+                tri.init();
+                tweenTriangle(tri);
+        }});
+    }
+
+    // Event handling
+    function addListeners() {
+        window.addEventListener('scroll', scrollCheck);
+        window.addEventListener('resize', resize);
+    }
+
+    function scrollCheck() {
+        if(document.body.scrollTop > height) animateHeader = false;
+        else animateHeader = true;
+    }
+
+    function resize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        largeHeader.style.height = height+'px';
+        canvas.width = width;
+        canvas.height = height;
+    }
+
+    function animate() {
+        if(animateHeader) {
+            ctx.clearRect(0,0,width,height);
+            for(var i in triangles) {
+                triangles[i].draw();
+            }
+        }
+        requestAnimationFrame(animate);
+    }
+
+    // Canvas manipulation
+    function Triangle() {
+        var _this = this;
+
+        // constructor
+        (function() {
+            _this.coords = [{},{},{}];
+            _this.pos = {};
+            init();
+        })();
+
+        function init() {
+            _this.pos.x = width*0.5;
+            _this.pos.y = height*0.5-20;
+            _this.coords[0].x = -10+Math.random()*40;
+            _this.coords[0].y = -10+Math.random()*40;
+            _this.coords[1].x = -10+Math.random()*40;
+            _this.coords[1].y = -10+Math.random()*40;
+            _this.coords[2].x = -10+Math.random()*40;
+            _this.coords[2].y = -10+Math.random()*40;
+            _this.scale = 0.1+Math.random()*0.3;
+            _this.color = colors[Math.floor(Math.random()*colors.length)];
+            setTimeout(function() { _this.alpha = 0.8; }, 10);
+        }
+
+        this.draw = function() {
+            if(_this.alpha >= 0.005) _this.alpha -= 0.005;
+            else _this.alpha = 0;
+            ctx.beginPath();
+            ctx.moveTo(_this.coords[0].x+_this.pos.x, _this.coords[0].y+_this.pos.y);
+            ctx.lineTo(_this.coords[1].x+_this.pos.x, _this.coords[1].y+_this.pos.y);
+            ctx.lineTo(_this.coords[2].x+_this.pos.x, _this.coords[2].y+_this.pos.y);
+            ctx.closePath();
+            ctx.fillStyle = 'rgba('+_this.color+','+ _this.alpha+')';
+            ctx.fill();
+        };
+
+        this.init = init;
+    }
+    
+})();
+</script>
+<script>
+$('.fc-mac').frameCarousel({
+
+  images: ['images/1.jpg', 'images/2.jpg', 'images/3.jpg',],
+  first: 0,
+  swipeThreshold: 10,
+  frame: 'templates/iphone_6_silver.png',
+  boundingBox: {
+
+  left: '33.6%',
+
+  top: '14%',
+
+  width: '33%',
+
+  height: '64%'
+
+},
+controlsPosition: {
+
+  top: '35%'
+
+},
+
+
+autoplay: true,
+
+autoplayInterval: 2000 
+
+    
+  
+
+
+});
+
+</script>
