@@ -229,6 +229,22 @@
                             non provident, similique sunt in culpa qui officia deserunt</h2>
                     </div>
                     <div id="node_section_5">
+                        <h1 style="color:bisque">Stage Title 4</h1>
+                        <p>&nbsp</p>
+                        <hr style="margin-left:25%;margin-right:25%;margin-bottom:50px" />
+                        <h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non provident, similique sunt in culpa qui officia deserunt</h2>
+                    </div>
+                    <div id="node_section_6">
+                        <h1 style="color:bisque">Stage Title 4</h1>
+                        <p>&nbsp</p>
+                        <hr style="margin-left:25%;margin-right:25%;margin-bottom:50px" />
+                        <h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non provident, similique sunt in culpa qui officia deserunt</h2>
+                    </div>
+                    <div id="node_section_7">
                         <h1 style="color:beige">Process Flow</h1>
                         <p>&nbsp</p>
                         <hr style="margin-left:25%;margin-right:25%;margin-bottom:50px;color:darkslategrey" />
@@ -251,17 +267,17 @@
                         width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve" style="transform:scale(2)">
                         <image overflow="visible" width="5000" height="5000" xlink:href="svg/background.png" transform="matrix(0.0998 0 0 0.1 0 0)">
                         </image>
-                        <image overflow="visible" enable-background="new    " width="283" height="283" xlink:href="svg/BF43CB0D.png" transform="matrix(0.2183 0 0 0.2576 222.6104 61.3389)">
+                        <image overflow="visible" enable-background="new    " width="283" height="283" xlink:href="svg/BF43CB0D.png" transform="matrix(0.2183 0 0 0.2576 222.6104 61.3389)" onclick="display1()">
                         </image>
-                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB13.png" transform="matrix(0.0993 0 0 0.1224 328.4072 128.3564)">
+                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB13.png" transform="matrix(0.0993 0 0 0.1224 328.4072 128.3564)" onclick="display2()">
                         </image>
-                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB15.png" transform="matrix(0.097 0 0 0.0922 332.874 296.6934)">
+                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB15.png" transform="matrix(0.097 0 0 0.0922 332.874 296.6934)" onclick="display3()">
                         </image>
-                        <image overflow="visible" enable-background="new    " width="1200" height="630" xlink:href="svg/BF43CB17.png" transform="matrix(0.0812 0 0 0.0904 211.2705 373.5078)">
+                        <image overflow="visible" enable-background="new    " width="1200" height="630" xlink:href="svg/BF43CB17.png" transform="matrix(0.0812 0 0 0.0904 211.2705 373.5078)" onclick="display4()">
                         </image>
-                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB14.png" transform="matrix(0.0996 0 0 0.0936 57.4746 296.1836)">
+                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB14.png" transform="matrix(0.0996 0 0 0.0936 57.4746 296.1836)" onClick="display5()">
                         </image>
-                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB1C.png" transform="matrix(0.1404 0 0 0.1621 29.3628 113.9238)">
+                        <image overflow="visible" enable-background="new    " width="1280" height="728" xlink:href="svg/BF43CB1C.png" transform="matrix(0.1404 0 0 0.1621 29.3628 113.9238)" onclick="display6()">
                         </image>
                         </svg>
                 </div>
@@ -628,6 +644,8 @@
     $("#node_section_3").hide();
     $("#node_section_4").hide();
     $("#node_section_1").hide();
+    $("#node_section_5").hide();
+    $("#node_section_6").hide();
 
     function display1() {
         console.log("onclick called")
@@ -635,6 +653,8 @@
         $("#node_section_3").hide();
         $("#node_section_4").hide();
         $("#node_section_5").hide();
+        $("#node_section_6").hide();
+        $("#node_section_7").hide();
         $("#node_section_1").fadeIn(1500);
     }
 
@@ -644,6 +664,8 @@
         $("#node_section_3").hide();
         $("#node_section_4").hide();
         $("#node_section_5").hide();
+        $("#node_section_6").hide();
+        $("#node_section_7").hide();
         $("#node_section_2").fadeIn(1500);
     }
 
@@ -653,6 +675,8 @@
         $("#node_section_1").hide();
         $("#node_section_4").hide();
         $("#node_section_5").hide();
+        $("#node_section_6").hide();
+        $("#node_section_7").hide();
         $("#node_section_3").fadeIn(1500);
     }
 
@@ -662,7 +686,29 @@
         $("#node_section_3").hide();
         $("#node_section_1").hide();
         $("#node_section_5").hide();
+        $("#node_section_6").hide();
+        $("#node_section_7").hide();
         $("#node_section_4").fadeIn(1500);
+    }
+    function display5() {
+        console.log("onclick called")
+        $("#node_section_2").hide();
+        $("#node_section_3").hide();
+        $("#node_section_1").hide();
+        $("#node_section_4").hide();
+        $("#node_section_6").hide();
+        $("#node_section_7").hide();
+        $("#node_section_5").fadeIn(1500);
+    }
+    function display6() {
+        console.log("onclick called")
+        $("#node_section_2").hide();
+        $("#node_section_3").hide();
+        $("#node_section_1").hide();
+        $("#node_section_5").hide();
+        $("#node_section_4").hide();
+        $("#node_section_7").hide();
+        $("#node_section_6").fadeIn(1500);
     }
 </script>
 <script>
