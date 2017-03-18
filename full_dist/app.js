@@ -15,12 +15,12 @@ app.config(function (cfpLoadingBarProvider, $stateProvider, $urlRouterProvider, 
 
         .state('raise-request', {
             url: "/Step2",
-            templateUrl: "http://localhost/ScrApp/reqForm.html",
+            templateUrl: "./reqForm.html",
             controller: "step2Control"
         })
         .state('otp-enter', {
-            url: "/otp-enter",
-            templateUrl: "http://localhost/ScrApp/templates/otp_in.html",
+            url: "./otp-enter",
+            templateUrl: "/templates/otp_in.html",
             controller: "otpControl"
         })
         .state('raise-request.subs', {
