@@ -19,7 +19,7 @@ app.config(function (cfpLoadingBarProvider, $stateProvider, $urlRouterProvider, 
             controller: "step2Control"
         })
         .state('otp-enter', {
-            url: "./otp-enter",
+            url: "/otp-enter",
             templateUrl: "/templates/otp_in.html",
             controller: "otpControl"
         })
