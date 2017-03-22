@@ -12,9 +12,7 @@
   margin: 60px;
   margin-bottom: 80px;
 }
-.fc .fc-frame {
-  margin: 0 auto;
-}
+
 .fc .fc-image-mask {
   background: #fff;
   position: absolute;
@@ -43,26 +41,8 @@
   display: block;
   float: left;
 }
-.fc .fc-controls {
-  top: 50%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  z-index: 10;
-}
-.fc .fc-btn {
-  color: #666666;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  padding: 10px;
-  border: 1px solid #666666;
-  position: absolute;
-  box-sizing: border-box;
-  line-height: 0.3;
-  font-size: 40px;
-  opacity: 0.7;
-}
+
+
 .fc .fc-btn:hover,
 .fc .fc-btn:focus,
 .fc .fc-btn:active,
