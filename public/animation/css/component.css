@@ -20,7 +20,7 @@
 }
 
 .demo-3 .large-header {
-	background-image: url('truck.png');
+	background-image: url('main.jpg');
 	background-position: center bottom;
 }
 
@@ -32,7 +32,7 @@
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	color: #f9f1e9;
+	color: white;
 	text-align: center;
 	top: 25%;
 	left: 50%;
@@ -182,9 +182,10 @@
 
 .demo-3 .main-title {
 	padding: 10px 40px;
-	border: 10px double #f9f1e9;
+	border: 10px double bisque;
 	text-transform: uppercase;
 	font-family: Londrina Outline, sans-serif;
+	background-color: #404040
 }
 
 .demo-4 .main-title {

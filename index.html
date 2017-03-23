@@ -180,7 +180,14 @@
                 .panel-body {
                     padding: 0px;
                 }
-                
+                .item{
+                    border:1px solid double white;
+                    background-color:white;
+                    color:#404040;
+                    padding:15px;
+                    
+                    text-align: center
+                }
                 .panel-item:hover {
                     color: white;
                     background-color: teal;
@@ -253,10 +260,10 @@
                 }
                 
                 #t_image {
-                    height: 120px;
-                    width: 120px;
+                    height: 200px;
+                    width: 200px;
                     margin-left: 25%;
-                    margin-bottom: 0px;
+                    margin-bottom: 10px;
                 }
                 
                 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
@@ -453,15 +460,15 @@
                 }
                 
                 .listing {
-                    color: wheat;
+                    color: #dfdce3;
                     padding: 1px;
                     margin-bottom: 30px;
                     transition: background-color 1s;
                 }
                 
                 .listing1 {
-                    background-color: teal;
-                    color: wheat;
+                    background-color:#404040;
+                    color: #dfdce3;
                 }
                 
                 image {
@@ -527,7 +534,7 @@
                     -webkit-perspective: 800;
                     width: 100%;
                     height: auto;
-                    padding:20px;
+                    padding: 20px;
                     height: 200px;
                     position: relative;
                     margin: 50px auto;
@@ -542,7 +549,6 @@
                     height: 100%;
                     -webkit-transform-style: preserve-3d;
                     -webkit-transition: 0.5s;
-                    
                 }
                 
                 .flip .card .face {
@@ -552,25 +558,46 @@
                     -webkit-backface-visibility: hidden;
                     z-index: 2;
                     font-family: 'Amaranth';
-                    
                     text-align: center;
-                    
+
                 }
+                
                 
                 .flip .card .front {
                     position: absolute;
                     z-index: 1;
-                    background: indianred;
+                    background-color:seagreen;
                     color: white;
                     cursor: pointer;
                 }
                 
                 .flip .card .back {
                     -webkit-transform: rotatex(-180deg);
-                    background:saddlebrown;
-                    
-                    color:white;
+                    background: lightslategrey;
+                   
                     cursor: pointer;
+                }
+                
+                .client_say {
+                   
+                   padding-top:40px;
+                   padding-bottom: 20px;
+
+                }
+                .icon{
+                   
+                    height: 250px;
+                    width:250px;
+                    margin-bottom: 5px;
+                   margin-left:23%;
+                   margin-right:25%;
+                    
+                }
+                .mainbox{
+                    margin:0px;
+                    padding:5px;
+                    background-color:seagreen;
+                    border:0px;
                 }
             </style>
 </head>
