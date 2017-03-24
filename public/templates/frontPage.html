@@ -1,5 +1,5 @@
-<nav class="navbar navbar-fixed-top">
-	<div class="container-fluid" style="padding:0px">
+<nav class="navbar-invserse navbar-fixed-top" style="width:100%;">
+	<div class="container-fluid" style="padding-top:10px;background-color: white;" >
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -11,8 +11,21 @@
 				</button>
 				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>ScrApp</a>
 		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<!-- /.navbar-collapse -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color:black;font-size: 18px;font: bolder">About Scrapp</a></li>
+		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Features</a></li>
+		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Process</a></li>
+		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Stats</a></li>
+		<li><a href="#" style="color:black;font-size: 18px;font: bolder">What We Buy</a></li>
+		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Client Reviews</a></li>
+		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Team</a></li>
+		<li><a href="#" style="color:black;font-size: 18px;font: bolder"><p>&nbsp</p></a></li>
+       
+      </ul>
+    </div>
 	</div>
 	<!-- /.container-fluid -->
 </nav>
@@ -299,8 +312,8 @@
 	</div>
 	<div class="section fp-noscroll">
 		<div class="container">
-			<div class="row" style="background-color: #404040" >
-			<div class="row" style="margin:0px;padding:0px;border:0px" id="process_re" >
+			<div class="row" style="background-color: #404040" style="transform: scaleY(0.9)">
+			<div class="row" style="margin:0px;padding:0px;border:0px)" >
 						<div class="col-md-4" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center" onmouseover="display1()" onmouseleave="hide1()">
 								<img src="./public/images/process_truck.svg" style="height:150px;width:150px" >
@@ -786,7 +799,7 @@
 			paddingTop: '0em',
 			paddingBottom: '0px',
 			fixedElements: '',
-			responsiveWidth: 20000,
+			responsiveWidth: 0,
 			responsiveHeight: 0,
 			responsiveSlides: true,
 
