@@ -9,7 +9,7 @@ app.config(['cfpLoadingBarProvider', function (cfpLoadingBarProvider) {
 app.config(function (cfpLoadingBarProvider, $stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 
 
-    $locationProvider.hashPrefix('');
+    $locationProvider.hashPrefix('!');
 
     $stateProvider
 
@@ -106,7 +106,7 @@ app.controller("formCtrl", function ($scope, $rootScope, $http,$state) {
         console.log($rootScope.User);
         $http({
             method: 'POST',
-            url: 'http://localhost:7000/raise-request/submit-request',
+            url: 'http://localhost:8888/raise-request/submit-request',
             data: {
                 phone_number: $rootScope.phone_no,
                 user_email: $scope.User.email,

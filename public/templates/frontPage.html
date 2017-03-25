@@ -1,5 +1,7 @@
 <nav class="navbar-invserse navbar-fixed-top" style="width:100%;">
-	<div class="container-fluid" style="background-color: white;" >
+	<div class="container-fluid" style="background-color: white;-webkit-box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.75);" >
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -9,20 +11,21 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>ScrApp</a>
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>ShutleScrApp</a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" style="color:black;font-size: 18px;font: bolder">About Scrapp</a></li>
-		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Features</a></li>
-		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Process</a></li>
-		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Stats</a></li>
-		<li><a href="#" style="color:black;font-size: 18px;font: bolder">What We Buy</a></li>
-		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Client Reviews</a></li>
-		<li><a href="#" style="color:black;font-size: 18px;font: bolder">Team</a></li>
-		<li><a href="#" style="color:black;font-size: 18px;font: bolder"><p>&nbsp</p></a></li>
+      <ul class="nav navbar-nav navbar-right" id="myMenu">
+        <li class="active"><a href="#page1" style="color:black;font-size: 18px;font: bolder">About Scrapp</a></li>
+		<li><a style="color:black;font-size: 18px;font: bolder" href="#page2">Features</a></li>
+		<li date-menuanchor="about_us"><a href="#page3" style="color:black;font-size: 18px;font: bolder">Process</a></li>
+		<li><a href="#page4" style="color:black;font-size: 18px;font: bolder">Stats</a></li>
+		<li><a href="#page5" style="color:black;font-size: 18px;font: bolder">What We Buy</a></li>
+		<li><a href="#page6" style="color:black;font-size: 18px;font: bolder">Client Reviews</a></li>
+		<li><a href="#page7" style="color:black;font-size: 18px;font: bolder">Team</a></li>
+		<li><a href="#/" style="color:black;font-size: 18px;font: bolder">Schedule Pickup</a></li>
+       <li><a href="#" style="color:black;font-size: 18px;font: bolder"><p>&nbsp</p></a></li>
        
       </ul>
     </div>
@@ -49,7 +52,7 @@
 </div>  
 -->
 <div id="fullpage">
-	<div class="section fp-auto-height" style="padding:0px;margin:0px;width:100%">
+	<div class="section fp-auto-height" style="padding:0px;margin:0px;width:100%" id="/">
 		<!-- <div class="container demo-2" style="width:100%">
                     <div class="content">
             <div id="large-header" class="large-header">
@@ -84,21 +87,22 @@
 			<div class="content" style="background-color: #404040">
 				<div id="large-header" class="large-header">
 					<canvas id="demo-canvas"></canvas>
+					<div >
 					<div class="text-center main-title">
 						<span style="color:#FFEB3B;font-weight: bolder">ScrApp</span> is at your disposal !
 					</div>
 					<p>&nbsp</p>
 					<h1 class="text-center main-title1 " id="demo" style="font-size: 60px;font-weight:bolder"></h1>
 					<p>&nbsp</p>
-					<h2 class="text-center main-title2" style="color: #303F9F;font-weight:bolder"> App Coming Soon !</h2>
+					<h2 class="text-center main-title2" style="color: #404040;font-weight:bolder"> App Coming Soon !</h2>
 					<div class="container">
 						<div class="container">
 							<div class="container">
 								<form>
-									<p><i class="glyphicon glyphicon-phone text-center main-title4" id="phone-icon" style="font-weight: bolder;font-size:80px;color: #465c8b"></i></p>
+									<p><i class="glyphicon glyphicon-phone text-center main-title4" id="phone-icon" style="font-weight: bolder;font-size:80px;color: #404040"></i></p>
 									<input type="text" class="main-title5" placeholder="Phone Number Verification" id="phone-enter" ng-model="phone_no" required>
 									<p>&nbsp</p>
-									<button type="button" class=" main-title6 btn text-center" style="background-color:#465c8b;font-weight:bolder;padding:20px;border-radius: 0px;font-size:15px"
+									<button type="button" class=" main-title6 btn text-center" style="background-color:#404040;font-weight:bolder;padding:20px;border-radius: 0px;font-size:15px"
 													ng-click="verify()">Request OTP</button>
 										<p>
 											<i class="glyphicon glyphicon-menu-down text-center main-title7 animated bounce" style="font-size:35px"></i>
@@ -107,10 +111,11 @@
 						</div>
 					</div>
 				</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section"  id="page1">
 		<!-- <div class="row">
             <div class="col-md-6"    style="background-image: url('./public/images/about.jpg');background-size: cover">
                 <p>&nbsp</p>
@@ -132,25 +137,26 @@
 
 
 
-		<div class="container">
+		<div class="container" >
 			<p>&nbsp</p>
 			<p>&nbsp</p>
 			<div class="row" style="padding:0px;margin:0px;border:0px" id="process_box">
-				<div class="col-md-6" style="margin:0px;padding:0px;border:0px;background-color: #FFEB3B">
-											
-			<p>&nbsp</p>			<p>&nbsp</p>
+				<div class="col-md-6" style="margin:0px;padding:0px;border:0px">
+
+			<p>&nbsp</p>								
+			<p>&nbsp</p>			
 			<p>&nbsp</p>
-					<h1 class="text-center" style="color:seagreen">Welcome to Scrapp</h1>
+					<h1 class="text-center" style="color:#404040">Welcome to Scrapp</h1>
 					<p>&nbsp</p>
 					<p>&nbsp</p>
-					<h3 class="text-center" style="padding:10px;letter-spacing: 2px">We are here to help you manage your scrap and how to earn from it. We are into waste management and disposal which include
+					<h3 class="text-center" style="padding:10px;letter-spacing: 2px;color:#404040">We are here to help you manage your scrap and how to earn from it. We are into waste management and disposal which include
 						all activities and actions required to manage waste from its formation. This includes from collection to receiving
 						with proper monitoring and regulation.</h3>
 					<p>&nbsp</p>
 					<h3 style="color:seagreen;padding:10px" class="text-center">You just need to call us or schedule pickup on our website and everything will get sort within 24 hours or less. Everything
 						you think is a waste is not now anymore.</h3>
 					<p>&nbsp</p>
-					<h1 class="text-center">REUSE To Reduce</h1>
+					<h1 class="text-center" style="color:seagreen">REUSE To Reduce</h1>
 				</div>
 				<div class="col-md-6" style="margin:0px;padding:0px;border:0px;">
 								
@@ -189,7 +195,7 @@
 
 
 
-	<div class="section fp-noscroll" >
+	<div class="section fp-noscroll" id="page2">
 		<div class="container">
 			<div class="container">
 		<div class="container">
@@ -205,55 +211,58 @@
 									<h1 style="color:beige">Process Flow</h1>
 									<p>&nbsp</p>
 									<hr style="margin-left:25%;margin-right:25%;margin-bottom:50px;color:darkslategrey" />
-									<h2 style="color:white">There is no such thing as "AWAY".When we throw anything it must go somewhere</h2>
+									<p>&nbsp</p>
+									<p>&nbsp</p>
+									<p>&nbsp</p>
+									<h2 style="color:#404040">There is no such thing as "AWAY".When we throw anything it must go somewhere</h2>
 								</div>
 							</div>
 							<div class="face back">
 								<div id="node_section_1">
-									<h1 style="color:bisque">Stage Title 1</h1>
+									<h1 style="color:#404040">Schedule Waste Pickup</h1>
 									<p>&nbsp</p>
 									<hr style="margin-left:25%;margin-right:25%;margin-bottom:50px">
-									<h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+									<h2 style="color:#404040">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
 										deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
 										sunt in culpa qui officia deserunt</h2>
 								</div>
 								<div id="node_section_2">
-									<h1 style="color:white">Stage Title 2</h1>
+									<h1 style="color:#404040">Secure Delivery for Recycling</h1>
 									<p>&nbsp</p>
 									<hr style="margin-left:25%;margin-right:25%;margin-bottom:50px">
-									<h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+									<h2 style="color:#404040">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
 										deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
 										sunt in culpa qui officia deserunt</h2>
 								</div>
 								<div id="node_section_3">
-									<h1 style="color:white">Stage Title 3</h1>
+									<h1 style="color:#404040">Waste Inspection</h1>
 									<p>&nbsp</p>
 									<hr style="margin-left:25%;margin-right:25%;margin-bottom:50px">
-									<h2>Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+									<h2 style="color:#404040">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
 										deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
 										sunt in culpa qui officia deserunt</h2>
 								</div>
 								<div id="node_section_4">
-									<h1 style="color:bisque">Stage Title 4</h1>
+									<h1 style="color:#404040">Credit Points Transfer</h1>
 									<p>&nbsp</p>
 									<hr style="margin-left:25%;margin-right:25%;margin-bottom:50px" />
-									<h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+									<h2 style="color:#404040">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
 										deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
 										sunt in culpa qui officia deserunt</h2>
 								</div>
 								<div id="node_section_5">
-									<h1 style="color:bisque">Stage Title 5</h1>
+									<h1 style="color:#404040">Recycling</h1>
 									<p>&nbsp</p>
 									<hr style="margin-left:25%;margin-right:25%;margin-bottom:50px" />
-									<h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+									<h2 sstyle="color:#404040">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
 										deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
 										sunt in culpa qui officia deserunt</h2>
 								</div>
 								<div id="node_section_6">
-									<h1 style="color:bisque">Stage Title 4</h1>
+									<h1 style="color:#404040">Recycled Products Sold Again</h1>
 									<p>&nbsp</p>
 									<hr style="margin-left:25%;margin-right:25%;margin-bottom:50px" />
-									<h2 style="color:white">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+									<h2 style="color:#404040">Stage Description : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
 										deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
 										sunt in culpa qui officia deserunt</h2>
 								</div>
@@ -265,39 +274,39 @@
 					<div class="row">
 						<div class="col-md-6" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center" onmouseover="display1()" onmouseleave="hide1()">
-								<img src="./public/images/process_truck.svg" style="height:150px;width:150px" >
-								<h4 class="text-center">Stage 1</h4>
+								<img src="./public/images/schedule.svg" style="height:150px;width:150px" >
+								<h4 class="text-center">Schedule Waste Pickup</h4>
 							</div>
 						</div>
 						<div class="col-md-6" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center" style="background-color:#FFEB3B" onmouseover="display2()" onmouseleave="hide2()">
-								<img src="./public/images/bin.svg" style="height:150px;width:150px">
-								<h4 class="text-center">Stage 2</h4>
+								<img src="./public/images/secure.svg" style="height:150px;width:150px">
+								<h4 class="text-center">Secure Delivery for Recycling</h4>
 							</div>
 						</div>
 							<div class="col-md-6" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center"  style="background-color:#FFEB3B" onmouseover="display3()" onmouseleave="hide3()">
-								<img src="./public/images/process_truck.svg" style="height:150px;width:150px">
-								<h4 class="text-center">Stage 3</h4>
+								<img src="./public/images/check.svg" style="height:150px;width:150px">
+								<h4 class="text-center">Waste Inspection</h4>
 							</div>
 						</div>
 
 						<div class="col-md-6" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center"  onmouseover="display4()" onmouseleave="hide4()">
-								<img src="./public/images/process_truck.svg" style="height:150px;width:150px">
-								<h4 class="text-center">Stage 4</h4>
+								<img src="./public/images/points.svg" style="height:150px;width:150px">
+								<h4 class="text-center">Credit Points Transfer</h4>
 							</div>
 						</div>
 						<div class="col-md-6" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center"   onmouseover="display5()" onmouseleave="hide5()">
-								<img src="./public/images/bin.svg" style="height:150px;width:150px">
-								<h4 class="text-center">Stage 5</h4>
+								<img src="./public/images/recycle1.svg" style="height:150px;width:150px">
+								<h4 class="text-center">Recycling</h4>
 							</div>
 						</div>
 							<div class="col-md-6" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
-							<div class="mainbox text-center" style="background-color:#FFEB3B">
-								<img src="./public/images/process_truck.svg" style="height:150px;width:150px">
-								<h4 class="text-center">Stage 6</h4>
+							<div class="mainbox text-center" style="background-color:#FFEB3B" onmouseover="display6()" onmouseleave="hide6()">
+								<img src="./public/images/refur.svg" style="height:150px;width:150px">
+								<h4 class="text-center">Recycled Products Sold Again</h4>
 							</div>
 						</div>
 
@@ -321,7 +330,7 @@
 
 
 
-	<div class="section fp-auto-height">
+	<div class="section fp-auto-height" id="page3">
 		<div class="container" id="mypage3" style="transform:scale(0.85)">
 			<p>&nbsp</p>
 			<p>&nbsp</p>
@@ -491,19 +500,19 @@
 
 
 
-	<div class="section fp-noscroll" style="padding-top:20px;background-image: url('');background-size: cover">
+	<div class="section fp-noscroll" style="padding-top:20px;background-image: url('');background-size: cover" id="page4">
 		<div class="container">
 			<div class="row" style="transform:scale(1)">
 				<div class="col-md-12">
 					<p>&nbsp</p>
 					<p>&nbsp</p>
-					<h1 style="color:bisque" class="text-center">When Numbers Speak</h1>
+					<h1 style="color:#404040" class="text-center">When Numbers Speak</h1>
+					<p>&nbsp</p>
 					<hr style="margin-left:35%;margin-right:35%;margin-bottom:10px" />
 					<p>&nbsp</p>
 					<p>&nbsp</p>
 					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
+					
 					<div class="row">
 						<div class="col-md-4 text-center" style="transform: scale(0.9)">
 							<div class="client_say" style="background-color:#FFEB3B">
@@ -514,12 +523,12 @@
 										</div>
 									</div>
 								</div>
-								<h1 id="el">0</h1>
-								<h2 style="color:white;font-family: 'Amaranth' ">Years of Experience</h2>
+								<h1 id="el" style="color:#404040">0</h1>
+								<h2 style="color:#404040;font-family: 'Amaranth' ">Years of Experience</h2>
 							</div>
 						</div>
 						<div class="col-md-4 text-center" style="transform: scale(0.9)">
-							<div class="client_say" style="background-color: seagreen">
+							<div class="client_say">
 								<div class="row">
 									<div class="col-md-12">
 										<div class="icon">
@@ -527,8 +536,8 @@
 										</div>
 									</div>
 								</div>
-								<h1 id="el1">0</h1>
-								<h2 style="color:white;font-family: 'Amaranth'">Clients Served</h2>
+								<h1 id="el1" style="color:#404040">0</h1>
+								<h2 style="color:#404040;font-family: 'Amaranth'">Clients Served</h2>
 							</div>
 						</div>
 						<div class="col-md-4 text-center " style="transform: scale(0.9)">
@@ -540,8 +549,8 @@
 										</div>
 									</div>
 								</div>
-								<h1 id="el2">0</h1>
-								<h2 style="color:white;font-family: 'Amaranth'">Tons of Scrap Handled</h2>
+								<h1 id="el2" style="color:#404040">0</h1>
+								<h2 style="color:#404040;font-family: 'Amaranth'">Tons of Scrap Handled</h2>
 							</div>
 						</div>
 					</div>
@@ -549,7 +558,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section" id="page5">
 		<p>&nbsp</p>
 		<p>&nbsp</p>
 		<p>&nbsp</p>
@@ -561,23 +570,27 @@
 		<div class="container">
 				<div class="row" style="margin:0px;padding:0px;border:0px">
 						<div class="col-md-3" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
-							<div class="mainbox text-center">
-								<img src="./public/images/process_truck.svg" style="height:150px;width:150px">
+							<div class="mainbox text-center" style="background-color:#FFEB3B">
+								<img src="./public/images/bottles.svg" style="height:150px;width:150px">
+								<h3 style="color:#404040">Glass</h3>
 							</div>
 						</div>
 						<div class="col-md-3" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
-							<div class="mainbox text-center" style="background-color:#FFEB3B">
-								<img src="./public/images/bin.svg" style="height:150px;width:150px">
+							<div class="mainbox text-center" >
+								<img src="./public/images/electro.svg" style="height:150px;width:150px">
+								<h3 style="color:#404040">Electronics</h3>
 							</div>
 						</div>
 							<div class="col-md-3" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
-							<div class="mainbox text-center">
-								<img src="./public/images/process_truck.svg" style="height:150px;width:150px">
+							<div class="mainbox text-center" style="background-color:#FFEB3B">
+								<img src="./public/images/paper.svg" style="height:150px;width:150px">
+								<h3 style="color:#404040">Papers</h3>
 							</div>
 						</div>
 						<div class="col-md-3" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
-							<div class="mainbox text-center" style="background-color:#FFEB3B">
-								<img src="./public/images/bin.svg" style="height:150px;width:150px">
+							<div class="mainbox text-center">
+								<img src="./public/images/metal.svg" style="height:150px;width:150px">
+								<h3 style="color:#404040">Metal</h3>
 							</div>
 						</div>
 					
@@ -586,29 +599,33 @@
 					<div class="row" style="margin:0px;padding:0px;border:0px">
 						<div class="col-md-3" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center">
-								<img src="./public/images/furn.svg" style="height:200px;width:200px">
+								<img src="./public/images/plastic.svg" style="height:200px;width:200px">
+								<h3 style="color:#404040">Plastic</h3>
 							</div>
 						</div>
 
 						<div class="col-md-3" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center" style="background-color:#FFEB3B">
-								<img src="./public/images/bc.svg" style="height:200px;width:200px">
+								<img src="./public/images/cardb.svg" style="height:200px;width:200px">
+								<h3 style="color:#404040">Cardboard</h3>
 							</div>
 						</div>
 						<div class="col-md-3" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center">
-								<img src="./public/images/process_truck.svg" style="height:200px;width:200px">
+								<img src="./public/images/furn.svg" style="height:200px;width:200px">
+								<h3 style="color:#404040">Furniture</h3>
 							</div>
 						</div>
 						<div class="col-md-3" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
 							<div class="mainbox text-center" style="background-color:#FFEB3B">
-								<img src="./public/images/bin.svg" style="height:200px;width:200px">
+								<img src="./public/images/other.svg" style="height:200px;width:200px">
+								<h3 style="color:#404040">Other</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 		</div>
-		<div class="section">
+		<div class="section" id="page6">
 		<h1 class="text-center" style="color:#404040"> Meet The Team </h1>
 		<div class="container">
 			<div class="row">
@@ -657,7 +674,7 @@
 		</div>
 		
 	</div>
-	<div class="section" style="background-image: url('http://houssup.com/images/background/bg-9.jpg');background-size:cover">
+	<div class="section" style="background-image: url('http://houssup.com/images/background/bg-9.jpg');background-size:cover" id="page7">
 		<div class="container">
 			<p>&nbsp</p>
 			<p>&nbsp</p>
@@ -713,71 +730,61 @@
 		</div>
 	</div>
 	
-	<div class="section fp-auto-height">
-		<footer style="padding-top:0px;margin-top:0px;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-6 footerleft ">
-						<div class="logofooter"> Logo</div>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-							dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-						<p><i class="fa fa-map-pin"></i> 210, Aggarwal Tower, Rohini sec 9, New Delhi -        110085, INDIA
-						</p>
-						<p><i class="fa fa-phone"></i> Phone (India) : +91 9999 878 398</p>
-						<p><i class="fa fa-envelope"></i> E-mail : info@webenlance.com</p>
-					</div>
-					<div class="col-md-2 col-sm-6 paddingtop-bottom">
-						<h6 class="heading7">GENERAL LINKS</h6>
-						<ul class="footer-ul">
-							<li><a href="#"> Career</a></li>
-							<li><a href="#"> Privacy Policy</a></li>
-							<li><a href="#"> Terms & Conditions</a></li>
-							<li><a href="#"> Client Gateway</a></li>
-							<li><a href="#"> Ranking</a></li>
-							<li><a href="#"> Case Studies</a></li>
-							<li><a href="#"> Frequently Ask Questions</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-6 paddingtop-bottom">
-						<h6 class="heading7">LATEST POST</h6>
-						<div class="post">
-							<p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-							<p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-							<p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+	<div class="section" id="page8" style="background-color:yellow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8" style="background-color:yellow">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="./public/images/logo_final.png" style="height:250px;width:450px"  class="text-center">
+						</div>
+						<div class="col-md-12">
+							<h1 style="color:#404040" class="text-center"><span><img src="./public/images/home.svg" style="height:70px;width:70px;margin-right:10px"></span>ScrappShuttle</h1>
+						</div>
+						<div class="col-md-12">
+							<h1 style="color:#404040"  class="text-center"><span><img src="./public/images/gmail.svg" style="height:70px;width:70px;margin-right:10px"></span>Email : info@scrapp.in</h1>
+						</div>
+						<div class="col-md-12">
+							<h1 style="color:#404040"  class="text-center"><span><img src="./public/images/mobile1.svg" style="height:70px;width:70px;margin-right:10px"></span>Phone No : 8373969539</h1>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 paddingtop-bottom">
-						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false"
-										style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-							<div class="fb-xfbml-parse-ignore">
-								<blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+
+				</div>
+				
+				<div class="col-md-4" style="background-color:seagreen">
+					<div class="row">
+							<div class="col-md-12" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
+							<div class="mainbox text-center"  style="background-color:seagreen"  onmouseover="display5()" onmouseleave="hide5()">
+								<img src="./public/images/facebook.svg" style="height:75px;width:75px">
+								<h4 class="text-center">Connect with us on Facebook</h4>
 							</div>
+						</div>
+							<div class="col-md-12" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
+							<div class="mainbox text-center" style="background-color:seagreen" onmouseover="display6()" onmouseleave="hide6()">
+								<img src="./public/images/twitter.svg" style="height:75px;width:75px">
+								<h4 class="text-center">Tweet along with us</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+							<div class="col-md-12" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
+							<div class="mainbox text-center"  style="background-color:seagreen" onmouseover="display5()" onmouseleave="hide5()">
+								<img src="./public/images/instagram.svg" style="height:75px;width:75px">
+								<h4 class="text-center">Follow us on Instagram</h4>
+							</div>
+						</div>
+							<div class="col-md-12" style="margin-left:0px;margin-right:0px;border:0px;padding:0px">
+							<div class="mainbox text-center"  style="background-color:seagreen" onmouseover="display6()" onmouseleave="hide6()">
+								<img src="./public/images/gmail.svg" style="height:75px;width:75px">
+								<h4 class="text-center">Contact us on Gmail</h4>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-	</div>
-	</footer>
-	<!--footer start from here-->
-	<div class="copyright">
-		<div class="container">
-			<div class="col-md-6">
-				<p>© 2016 - All Rights with Webenlance</p>
-			</div>
-			<div class="col-md-6">
-				<ul class="bottom_ul">
-					<li><a href="#">webenlance.com</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Faq's</a></li>
-					<li><a href="#">Contact us</a></li>
-					<li><a href="#">Site Map</a></li>
-				</ul>
-			</div>
 		</div>
-	</div>
 </div>
-</div>
-</div>
+
 <script type="text/javascript">
 	$(document).ready(function () {
 
@@ -789,10 +796,10 @@
 			//Navigation
 			menu: '#myMenu',
 			lockAnchors: true,
-			anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage'], //anchor links for direct access from button
-			navigation: true,
+			anchors: ['/', 'about_us', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage'], //anchor links for direct access from button
+			navigation: false,
 			navigationPosition: 'right',
-			navigationTooltips: ['firstSlide', 'secondSlide'],
+			navigationTooltips: ['About Scrapp', 'Features','Process','Stats','What We Buy','Client Reviews','Team'],
 			showActiveTooltip: false,
 			slidesNavigation: false,
 			slidesNavPosition: 'bottom',
