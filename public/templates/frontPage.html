@@ -24,7 +24,7 @@ box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.75);" >
 		<li><a href="#page5" style="color:black;font-size: 18px;font: bolder">What We Buy</a></li>
 		<li><a href="#page6" style="color:black;font-size: 18px;font: bolder">Client Reviews</a></li>
 		<li><a href="#page7" style="color:black;font-size: 18px;font: bolder">Team</a></li>
-		<li><a href="#/" style="color:black;font-size: 18px;font: bolder">Schedule Pickup</a></li>
+		<li style="background-color:#404040"><a href="#/" style="color:white;font-size: 18px;font: bolder">Schedule Pickup</a></li>
        <li><a href="#" style="color:black;font-size: 18px;font: bolder"><p>&nbsp</p></a></li>
        
       </ul>
@@ -786,6 +786,7 @@ box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.75);" >
 </div>
 
 <script type="text/javascript">
+var bool = true;
 	$(document).ready(function () {
 
 
@@ -855,7 +856,12 @@ box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.75);" >
 			lazyLoading: true,
 
 			//events
-			onLeave: function (index, nextIndex, direction) {},
+			onLeave: function (index, nextIndex, direction) {
+				if(index==3){
+					bool=false;
+					console.log("bool updated"+bool);
+				}
+			},
 			afterLoad: function (anchorLink, index) {},
 			afterRender: function () {},
 			afterResize: function () {
@@ -863,6 +869,7 @@ box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.75);" >
 			},
 			afterResponsive: function (isResponsive) {},
 			afterLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+				
 				if (index == 3) {
 					console.log('page3');
 
@@ -950,9 +957,12 @@ box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.75);" >
 
 					}
 
-				
+				if(bool){
 					show1();
-
+					console.log(bool);
+					bool=false;
+					console.log(bool);
+				}
 				}
 
 				if (index == 4) {
