@@ -1,37 +1,33 @@
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <p>&nbsp</p>
 <p>&nbsp</p>
 <p>&nbsp</p>
 <div>
-<div class="row">
-    <div class="col-md-3">
-        <p>&nbsp</p>
-    </div>
-    <div class="col-md-6">
-        <div class="jumbotron" id="otp">
-            <div class="row">
-                <div class="col-md-3">
-                    <p>&nbsp</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input type="text" class="form-control text-center" id="otp" placeholder="Enter Your OTP here" ng-model="otp" required>
+    <div class="row">
+        <div class="col-md-3">
+            <p>&nbsp</p>
+        </div>
+        <div class="col-md-6">
+            <div class="jumbotron" id="otp">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>&nbsp</p>
                     </div>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button" ng-click="verify1()" style="display:block;margin:0 auto;">Submit OTP</a></p>
-                    <p ng-click="verify()" style="color:blue;cursor:pointer" >Have not Recieved OTP yet? Resend OTP ! </p>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control text-center" id="otp" placeholder="Enter Your OTP here" ng-model="otp" required>
+                        </div>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button" ng-click="verify1()" style="display:block;margin:0 auto;">Submit OTP</a></p>
+                        <p ng-click="verify()" style="color:blue;cursor:pointer">Have not Recieved OTP yet? Resend OTP ! </p>
+                    </div>
                 </div>
-                
             </div>
         </div>
+        <div class="col-md-3">
+            <p>&nbsp</p>
+        </div>
     </div>
-    <div class="col-md-3">
-                    <p>&nbsp</p>
-                </div>
 </div>
-</div>
-
 <script>
-$.fn.fullpage.destroy('all');
+    $.fn.fullpage.destroy('all');
 </script>

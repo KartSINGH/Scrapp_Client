@@ -1,4 +1,5 @@
 /* Header */
+
 .large-header {
 	position: relative;
 	width: 100%;
@@ -16,14 +17,13 @@
 .demo-2 .large-header {
 	background-image: url('');
 	background-position: center bottom;
-
 }
 
 .demo-3 .large-header {
 	background-image: url('http://www.ecowise.net.in/wp-content/themes/function/images/cms-container-bg.jpg');
 	background-position: center bottom;
-	background-color:seagreen;
-	background-size:cover;
+	background-color: seagreen;
+	background-size: cover;
 }
 
 .demo-4 .large-header {
@@ -38,9 +38,10 @@
 	text-align: center;
 	top: 25%;
 	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .main-title1 {
 	position: absolute;
 	margin: 0;
@@ -49,9 +50,10 @@
 	text-align: center;
 	top: 40%;
 	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .main-title2 {
 	position: absolute;
 	margin: 0;
@@ -60,9 +62,10 @@
 	text-align: center;
 	top: 50%;
 	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .main-title3 {
 	position: absolute;
 	margin: 0;
@@ -71,9 +74,10 @@
 	text-align: center;
 	top: 55%;
 	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .main-title4 {
 	position: absolute;
 	margin: 0;
@@ -82,9 +86,10 @@
 	text-align: center;
 	top: 60%;
 	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .main-title5 {
 	position: absolute;
 	margin: 0;
@@ -93,19 +98,20 @@
 	text-align: center;
 	top: 70%;
 	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .main-title6 {
 	position: absolute;
-	
 	color: #f9f1e9;
 	text-align: center;
 	top: 80%;
 	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .main-title7 {
 	position: absolute;
 	margin: 0;
@@ -114,23 +120,25 @@
 	text-align: center;
 	top: 95%;
 	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
 
-.demo-1 .main-title, 
+.demo-1 .main-title,
 .demo-3 .main-title {
 	text-transform: uppercase;
 	font-size: 4.2em;
 	letter-spacing: 0.1em;
 }
 
-.demo-2 .main-title , .main-title1 , .main-title2 {
+.demo-2 .main-title,
+.main-title1,
+.main-title2 {
 	font-family: 'Clicker Script', cursive;
 	font-weight: normal;
 	font-size: 8em;
 	padding-left: 10px;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .demo-2 .main-title::before {
@@ -139,47 +147,46 @@
 	height: 20vw;
 	min-width: 3.5em;
 	min-height: 3.5em;
-	
 	background-size: cover;
 	position: absolute;
 	top: 40%;
 	left: 50%;
 	border-radius: 50%;
 	z-index: -1;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .demo-2 .main-title1::before {
 	content: '';
 	width: 20vw;
 	height: 20vw;
 	min-width: 3.5em;
 	min-height: 3.5em;
-	
 	background-size: cover;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	border-radius: 50%;
 	z-index: -1;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
+
 .demo-2 .main-title2::before {
 	content: '';
 	width: 20vw;
 	height: 20vw;
 	min-width: 3.5em;
 	min-height: 3.5em;
-	
 	background-size: cover;
 	position: absolute;
 	top: 60%;
 	left: 50%;
 	border-radius: 50%;
 	z-index: -1;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
 }
 
 .demo-3 .main-title {
@@ -202,13 +209,12 @@
 	font-weight: 200;
 }
 
-@media only screen and (max-width : 768px) {
-	.demo-1 .main-title, 
+@media only screen and (max-width: 768px) {
+	.demo-1 .main-title,
 	.demo-3 .main-title,
 	.demo-4 .main-title {
 		font-size: 3em;
 	}
-
 	.demo-2 .main-title {
 		font-size: 4em;
 	}

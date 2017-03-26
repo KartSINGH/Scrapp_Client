@@ -47,21 +47,21 @@ app.config(function (cfpLoadingBarProvider, $stateProvider, $urlRouterProvider, 
             controller: "MainCtrl"
 
         })
-        .state('features',{
-            url:'/features',
-            templateUrl:'./templates/features.html',
+        .state('features', {
+            url: '/features',
+            templateUrl: './templates/features.html',
             controller: './fController'
         })
 });
-app.controller('fController',function($scope){
-console.log("features Page");
+app.controller('fController', function ($scope) {
+    console.log("features Page");
 });
-app.controller('SubmitedCtrl',function($scope){
-console.log("Final Submission done");
+app.controller('SubmitedCtrl', function ($scope) {
+    console.log("Final Submission done");
 });
 app.controller('MainCtrl', function ($rootScope, $scope, $state, $http) {
     angular.element(document).ready(function () {
-       console.log("hello");
+        console.log("hello");
     });
     $scope.verify = function () {
         $rootScope.phone_no = $scope.phone_no;
@@ -106,7 +106,7 @@ app.controller("PriceCtrl", function ($scope) {
 
 });
 
-app.controller("formCtrl", function ($scope, $rootScope, $http,$state) {
+app.controller("formCtrl", function ($scope, $rootScope, $http, $state) {
     console.log('form controller called');
 
     $scope.signup = function () {
@@ -123,7 +123,7 @@ app.controller("formCtrl", function ($scope, $rootScope, $http,$state) {
                 scrap_amount: $scope.User.scrap_amount,
                 time: $scope.User.time
             },
-           
+
         }).then(function (data) {
             $state.go('raise-request.submitted');
         }, function (data) {
@@ -151,8 +151,8 @@ app.controller("otpControl", function ($scope, $rootScope, $state) {
     console.log('otp controller called');
 
     $scope.verify = function () {
-        
-   $state.go('MainCtrl');
+
+        $state.go('MainCtrl');
 
 
 
