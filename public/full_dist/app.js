@@ -47,6 +47,14 @@ app.config(function (cfpLoadingBarProvider, $stateProvider, $urlRouterProvider, 
             controller: "MainCtrl"
 
         })
+        .state('features',{
+            url:'/features',
+            templateUrl:'./templates/features.html',
+            controller: './fController'
+        })
+});
+app.controller('fController',function($scope){
+console.log("features Page");
 });
 app.controller('SubmitedCtrl',function($scope){
 console.log("Final Submission done");
