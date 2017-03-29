@@ -126,8 +126,8 @@ app.controller("formCtrl", function ($scope, $rootScope, $http, $state) {
 
         }).then(function (data) {
             $state.go('raise-request.submitted');
-        }, function (data) {
-            alert(data);
+        }, function (error) {
+            alert(error);
             console.log(data);
         })
 
